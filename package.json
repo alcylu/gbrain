@@ -60,7 +60,7 @@
     "prepublish:clawhub": "bun run build:all",
     "publish:clawhub": "clawhub package publish . --family bundle-plugin",
     "build:original": "bun build --compile --outfile bin/gbrain src/cli.ts",
-    "start": "bun run src/cli.ts serve --http --port ${PORT:-3131}"
+    "start": "bash scripts/start-with-sync.sh"
   },
   "openclaw": {
     "compat": {
